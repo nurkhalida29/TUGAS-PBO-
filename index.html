@@ -1,0 +1,32 @@
+#<script>class Manusia {
+    constructor(nama) {
+        this.nama = nama;
+    }
+
+    perkenalan() {
+        console.log(`Halo, nama saya ${this.nama}`);
+    }
+}
+
+class Mahasiswa extends Manusia {
+    constructor(nama, nim) {
+        super(nama);
+        this.nim = nim;
+    }
+
+    perkenalan() {
+        console.log(`Halo, saya ${this.nama}, NIM saya ${this.nim}`);
+    }
+}
+class Mobil {
+    jalan() {
+        console.log("Mobil berjalan di jalan raya dengan cepat.");
+    }
+}
+
+class Sepeda {
+    jalan() {
+        console.log("Sepeda dikayuh di jalur sepeda dengan pelan.");
+    }
+}
+<script>
